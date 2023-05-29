@@ -33,3 +33,20 @@ body {
   padding: 20px;
   text-align: center;
 }
+
+.resume {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #2c2851;
+  color: white;
+  margin: 25px;
+}
+
+.resume:hover {
+  background-color: #6cf5c2;
+  color: #2c2851;
+}
+
+.text-left {
+  text-align: left;
+}

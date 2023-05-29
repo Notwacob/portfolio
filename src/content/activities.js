@@ -1,14 +1,7 @@
 export const activities = [
   {
-    title: "100DaysOfCode",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-  },
-  {
-    title: "JSConf Speaker",
-    text: "Maecenas lectus massa, tincidunt et lectus non, volutpat gravida",
-  },
-  {
-    title: "ReactConf Attendee",
-    text: "Proin risus urna, posuere id lectus id, venenatis faucibus ligula",
-  },
+    title: "Javascript 30",
+    text: "Build 30 things in 30 days with 30 tutorials",
+    text2: "No Frameworks X No Compilers X No Libraries X No Boilerplate",
+  }
 ];

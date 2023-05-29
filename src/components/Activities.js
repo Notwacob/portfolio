@@ -26,6 +26,9 @@ export const Activities = () => {
         <div>
           <h2 className={styles.title}>{activities[activeSlide].title}</h2>
           <p className={styles.text}>{activities[activeSlide].text}</p>
+          {activities[activeSlide].text2 !== "" ? (
+            <p className={styles.text}>{activities[activeSlide].text2}</p>
+          ) : null}
         </div>
       </div>
       <button
