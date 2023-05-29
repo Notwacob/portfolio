@@ -4,7 +4,7 @@ export const HeroArea = () => {
   return (
     <section className={styles.wrapper}>
       <img className={styles.profile} src="/assets/profile.png" alt="profile" />
-      <h1 className="title">Hi, I'm John!</h1>
+      <h1 className="title">Hi, I'm Jacob!</h1>
       <p className="description">
         An aspiring web developer looking for a new role in tech
       </p>

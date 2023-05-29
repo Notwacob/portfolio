@@ -3,25 +3,25 @@ import styles from "./Footer.module.css";
 export const Footer = () => {
   return (
     <footer className={styles.wrapper}>
-      <h1 className={styles.title}>John Doe</h1>
-      <p>123 Street, New York, USA</p>
-      <p>+012 345 67890 | info@domain.com</p>
+      <h1 className={styles.title}>Jacob Wilson</h1>
+      <p>2360 Esplanade Drive, Virginia Beach, Virginia, USA </p>
+      <p>+757 434 1748 | wilson.a.jacob@gmail.com</p>
       <div className={styles.socials}>
-        <img
+        <a href="https://twitter.com/notwacob" target="_blank" rel="noreferrer"><img
           src="/assets/socials/twitter.png"
           alt="social-icon"
           className={styles.icon}
-        />
-        <img
+        /></a>
+        <a href="https://www.linkedin.com/in/jacob-a-wilson/" target="_blank" rel="noreferrer"><img
           src="/assets/socials/linkedin.png"
           alt="social-icon"
           className={styles.icon}
-        />
-        <img
+        /></a>
+        <a href="https://github.com/Notwacob" target="_blank" rel="noreferrer"><img
           src="/assets/socials/github.png"
           alt="social-icon"
           className={styles.icon}
-        />
+        /></a>
       </div>
     </footer>
   );
