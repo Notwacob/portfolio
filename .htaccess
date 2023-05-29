@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^notwacob\.com$ [NC]
+RewriteCond %{REQUEST_URI} ^/site1 [NC]
+RewriteRule ^(.*)$ https://notwacob.github.io [L,R=301]

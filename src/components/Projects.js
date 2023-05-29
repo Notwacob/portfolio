@@ -15,6 +15,14 @@ export const Projects = () => {
             <div className={styles.info}>
               <h2 className={styles.title}>{project.title}</h2>
               <p className={styles.description}>{project.description}</p>
+              <div className={styles.btns}>
+                {project.project_link !== "" ? (
+                  <a href={project.project_link} target="_blank" className={styles.button} rel="noreferrer">Project Link</a>
+                ) : null}
+                {project.code_link !== "" ? (
+                  <a href={project.code_link} target="_blank" className={styles.button} rel="noreferrer">Code Link</a>
+                ) : null}
+              </div>
             </div>
           </div>
         );

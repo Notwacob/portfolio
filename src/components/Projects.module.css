@@ -35,6 +35,24 @@
   color: #85819f;
 }
 
+.btns {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.button {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #2c2851;
+  color: white;
+}
+
+.button:hover {
+  background-color: #6cf5c2;
+  color: #2c2851;
+}
+
 @media only screen and (max-width: 560px) {
   .card {
     grid-template-columns: 1fr;
