@@ -58,7 +58,7 @@ const CodingChallenges = () => {
       title: "Starfield Simulation",
       description: "This is a simulation of a starfield",
       button: "https://editor.p5js.org/Notwacob/full/cd0DGq3vP",
-      imageUrl: "https://media.discordapp.net/attachments/1081311787821043805/1110524585083945000/image.png?width=1270&height=662",
+      imageUrl: "https://media.discordapp.net/attachments/1081311787821043805/1114009824720588830/image.png?width=661&height=662",
     },
     {
       id: 2,
