@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { codingChallengesSlides } from "../content/codingChallenges";
 // eslint-disable-next-line
 import styled from "styled-components";
 
@@ -52,37 +53,14 @@ const CarouselContainer = styled.div`
 
 const CodingChallenges = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const slides = [
-    {
-      id: 1,
-      title: "Starfield Simulation",
-      description: "This is a simulation of a starfield",
-      button: "https://editor.p5js.org/Notwacob/full/cd0DGq3vP",
-      imageUrl: "https://media.discordapp.net/attachments/1081311787821043805/1114009824720588830/image.png?width=661&height=662",
-    },
-    {
-      id: 2,
-      title: "Menger Sponge Fractal",
-      description: "A simulation of the Menger Sponge Fractal",
-      button: "https://editor.p5js.org/Notwacob/full/dnOKhG205",
-      imageUrl: "https://media.discordapp.net/attachments/1081311787821043805/1114017256272314410/image.png?width=498&height=503",
-    },
-    {
-      id: 3,
-      title: "Challenge 3",
-      description: "Create a component for displaying a user profile.",
-      button: "",
-      imageUrl: "/path/to/image3.jpg",
-    },
-  ];
 
   const nextSlide = () => {
-    setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
+    setCurrentSlide((prevSlide) => (prevSlide + 1) % codingChallengesSlides.length);
   };
 
   const prevSlide = () => {
     setCurrentSlide((prevSlide) =>
-      prevSlide === 0 ? slides.length - 1 : prevSlide - 1
+      prevSlide === 0 ? codingChallengesSlides.length - 1 : prevSlide - 1
     );
   };
 
@@ -98,16 +76,16 @@ const CodingChallenges = () => {
       <SlideButton onClick={prevSlide}>
         <Icon src="/assets/actions/left-arrow.png" alt="Previous" />
       </SlideButton>
-      <CarouselContainer imageUrl={slides[currentSlide].imageUrl}>
+      <CarouselContainer imageUrl={codingChallengesSlides[currentSlide].imageUrl}>
         <div style={{
             padding: "25px",
             border: "5px solid black",
             backgroundColor: "rgba(255, 255, 255, 0.75)",
         }}>
-            <h2>{slides[currentSlide].title}</h2>
-            <p>{slides[currentSlide].description}</p>
+            <h2>{codingChallengesSlides[currentSlide].title}</h2>
+            <p>{codingChallengesSlides[currentSlide].description}</p>
         </div>
-        <Link href={slides[currentSlide].button}>Project Link</Link>
+        <Link href={codingChallengesSlides[currentSlide].button}>Project Link</Link>
       </CarouselContainer>
       <SlideButton className="Button" onClick={nextSlide}>
         <Icon src="/assets/actions/right-arrow.png" alt="Next" />
