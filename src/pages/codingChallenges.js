@@ -62,10 +62,10 @@ const CodingChallenges = () => {
     },
     {
       id: 2,
-      title: "Challenge 2",
-      description: "Implement a binary search algorithm.",
-      button: "",
-      imageUrl: "/path/to/image2.jpg",
+      title: "Menger Sponge Fractal",
+      description: "A simulation of the Menger Sponge Fractal",
+      button: "https://editor.p5js.org/Notwacob/full/dnOKhG205",
+      imageUrl: "https://media.discordapp.net/attachments/1081311787821043805/1114017256272314410/image.png?width=498&height=503",
     },
     {
       id: 3,
