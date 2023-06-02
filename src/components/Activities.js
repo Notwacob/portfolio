@@ -26,9 +26,15 @@ export const Activities = () => {
         <div>
           <h2 className={styles.title}>{activities[activeSlide].title}</h2>
           <p className={styles.text}>{activities[activeSlide].text}</p>
-          {activities[activeSlide].text2 !== "" ? (
+          {activities[activeSlide].text2 !== "" && (
             <p className={styles.text}>{activities[activeSlide].text2}</p>
-          ) : null}
+          )}
+          {activities[activeSlide].link !== "" && (
+            <>
+              <br />
+              <a href={activities[activeSlide].link} className={styles.btn}>Project Link</a>
+            </>
+          )}
         </div>
       </div>
       <button
