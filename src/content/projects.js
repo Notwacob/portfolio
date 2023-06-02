@@ -7,6 +7,13 @@ export const projects = [
     image: "/assets/projects/the-store-of-knowledge.png",
   },
   {
+    title: "Register and Login Node JS",
+    description: "This is a nodejs application that is connected to mongodb for user authentication.",
+    project_link: "https://nodejs-aaib.onrender.com",
+    code_link: "https://github.com/Notwacob/nodejs",
+    image: "/assets/projects/node-js.png",
+  },
+  {
     title: "Multimedia App",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
     project_link: "",
