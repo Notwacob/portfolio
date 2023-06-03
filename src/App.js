@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import { Header } from "./components/Header";
 import { HeroArea } from "./components/HeroArea";
 import { About } from "./components/About";
@@ -9,6 +9,7 @@ import { Activities } from "./components/Activities";
 import { Contacts } from "./components/Contacts";
 import { Footer } from "./components/Footer";
 import CodingChallenges from "./pages/codingChallenges";
+import { NotFoundPage } from './components/NotFoundPage';
 
 import "./index.css";
 
@@ -91,6 +92,8 @@ export default function App() {
             }
           />
           <Route path="/codingChallenges" element={<CodingChallenges />} />
+          <Route path="404" element={<NotFoundPage />} />
+          <Route path="*" element={<Navigate to="/404" />} />
         </Routes>
       </Router>
     </div>
