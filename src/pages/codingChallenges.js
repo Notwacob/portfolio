@@ -65,6 +65,7 @@ const CodingChallenges = () => {
   };
 
   return (
+    <Link href="https://notwacob.com">Project Link</Link>,
     <div
       style={{
         display: "flex",
