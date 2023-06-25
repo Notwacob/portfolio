@@ -51,6 +51,20 @@ const CarouselContainer = styled.div`
   background-position: center;
 `;
 
+const Button = styled.a`
+  border: none;
+  background-color: #6cf5c2;
+  border-radius: 5px;
+  width: auto;
+  padding: 10px 15px;
+  margin: 0 auto;
+  color: #2c2851;
+  &:hover {
+    background-color: #1fffad;
+    cursor: pointer;
+  }
+`;
+
 const CodingChallenges = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -65,32 +79,34 @@ const CodingChallenges = () => {
   };
 
   return (
-    <Link href="https://notwacob.com">Project Link</Link>,
-    <div
-      style={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        height: "100vh",
-      }}
-    >
-      <SlideButton onClick={prevSlide}>
-        <Icon src="/assets/actions/left-arrow.png" alt="Previous" />
-      </SlideButton>
-      <CarouselContainer imageUrl={codingChallengesSlides[currentSlide].imageUrl}>
-        <div style={{
+    <div>
+      <Button href="https://notwacob.com">Home</Button>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          height: "100vh",
+        }}
+      >
+        <SlideButton onClick={prevSlide}>
+          <Icon src="/assets/actions/left-arrow.png" alt="Previous" />
+        </SlideButton>
+        <CarouselContainer imageUrl={codingChallengesSlides[currentSlide].imageUrl}>
+          <div style={{
             padding: "25px",
             border: "5px solid black",
             backgroundColor: "rgba(255, 255, 255, 0.75)",
-        }}>
+          }}>
             <h2>{codingChallengesSlides[currentSlide].title}</h2>
             <p>{codingChallengesSlides[currentSlide].description}</p>
-        </div>
-        <Link href={codingChallengesSlides[currentSlide].button}>Project Link</Link>
-      </CarouselContainer>
-      <SlideButton className="Button" onClick={nextSlide}>
-        <Icon src="/assets/actions/right-arrow.png" alt="Next" />
-      </SlideButton>
+          </div>
+          <Link href={codingChallengesSlides[currentSlide].button}>Project Link</Link>
+        </CarouselContainer>
+        <SlideButton className="Button" onClick={nextSlide}>
+          <Icon src="/assets/actions/right-arrow.png" alt="Next" />
+        </SlideButton>
+      </div>
     </div>
   );
 };
