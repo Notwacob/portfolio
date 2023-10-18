@@ -38,14 +38,11 @@ export default function App() {
                 <br></br>
                 <p>
                   One of my notable involvements was serving on the executive
-                  boards for Spectrum and Movie Crew. As a member of Spectrum,
-                  an organization dedicated to advocating for and supporting the
-                  LGBTQ+ community, I contributed to organizing events and
-                  activities that fostered inclusivity on campus. Additionally,
-                  my role in Movie Crew allowed me to coordinate and host movie
+                  board of Movie Crew. My role in Movie Crew allowed 
+                  me to coordinate and host movie
                   events, bringing the Virginia Wesleyan community together for
-                  entertaining experiences. These experiences as part of the
-                  executive boards enhanced my leadership and teamwork skills,
+                  entertaining experiences. This experience as part of the
+                  executive board enhanced my leadership and teamwork skills,
                   which will prove invaluable as I progress in my career.
                 </p>
                 <br></br>
